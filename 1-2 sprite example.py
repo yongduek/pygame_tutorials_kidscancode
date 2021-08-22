@@ -17,7 +17,8 @@ class Player(pygame.sprite.Sprite):
     # sprite for the Player
     def __init__(self):
         # this line is required to properly create the sprite
-        pygame.sprite.Sprite.__init__(self)
+        # pygame.sprite.Sprite.__init__(self)
+        super().__init__()
         # create a plain rectangle for the sprite image
         self.image = pygame.Surface((50, 50))
         self.image.fill(GREEN)
